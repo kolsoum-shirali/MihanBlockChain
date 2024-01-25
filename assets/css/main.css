@@ -1,4 +1,5 @@
 @import url(./base.css);
+@import url(../icomoon/style.css);
 body {
   direction: rtl;
   margin: 0;
