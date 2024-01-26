@@ -6,7 +6,7 @@
         <span class="text-xs mr-1">جمعه 6 بهمن 1402</span>
       </div>
       <div class="w-[35%]">
-        <ul class="flex">
+        <ul class="flex justify-end">
           <li
             v-for="(item, index) in options"
             :key="index"
