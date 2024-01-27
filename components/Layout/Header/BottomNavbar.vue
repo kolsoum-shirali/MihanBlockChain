@@ -17,7 +17,7 @@
             </div>
             <div
               v-if="item.subMenu"
-              class="wrap-sub-menu absolute right-0 top-[70px] w-[200px] border-t-2 border-[#38bdf8] transition-all bg-[#1f2024] py-5 px-3 rounded-b-md"
+              class="wrap-sub-menu absolute z-10 right-0 top-[70px] w-[200px] border-t-2 border-[#38bdf8] transition-all bg-[#1f2024] py-5 px-3 rounded-b-md"
             >
               <ul>
                 <li
