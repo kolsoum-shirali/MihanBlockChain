@@ -11,17 +11,12 @@ body {
 *::after {
   box-sizing: border-box;
 }
-.header-slider .carousel__prev {
-  background: white !important;
-  padding: 25px 0 !important;
-  border-radius: 5px !important;
-}
+.header-slider .carousel__prev,
 .header-slider .carousel__next {
   background: white !important;
   padding: 25px 0 !important;
   border-radius: 5px !important;
 }
-
 .home-chart-navigation .carousel__prev,
 .carousel__next {
   background: transparent !important;
@@ -33,4 +28,9 @@ body {
 .home-chart-navigation.carousel__prev {
   right: -35px !important;
   color: gray !important;
+}
+.navigation-news.carousel__prev,
+.navigation-news.carousel__next {
+  background: rgb(223, 219, 219) !important;
+  border-radius: 50% !important;
 }
