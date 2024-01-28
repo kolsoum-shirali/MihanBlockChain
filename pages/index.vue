@@ -1,6 +1,7 @@
 <template>
   <div>
     <LayoutHeaderMainHeaderApp />
+    <PagesHomeHeaderSliderMainHeaderSlider />
   </div>
 </template>
 
