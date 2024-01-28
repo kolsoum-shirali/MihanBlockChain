@@ -11,9 +11,28 @@ body {
 *::after {
   box-sizing: border-box;
 }
-.header-slider .carousel__prev, .carousel__next{
+.header-slider .carousel__prev {
+  background: white !important;
+  padding: 25px 0 !important;
+  border-radius: 5px !important;
+}
+.header-slider .carousel__next {
   background: white !important;
   padding: 25px 0 !important;
   border-radius: 5px !important;
 }
 
+.home-chart-navigation .carousel__prev,
+.carousel__next {
+  background: transparent !important;
+  padding: 25px 0 !important;
+  border-radius: 5px !important;
+}
+.home-chart-navigation.carousel__next {
+  left: -35px !important;
+  color: gray !important;
+}
+.home-chart-navigation.carousel__prev {
+  right: -35px !important;
+  color: gray !important;
+}
