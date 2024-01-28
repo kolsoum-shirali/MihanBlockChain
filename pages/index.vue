@@ -6,6 +6,7 @@
         <PagesHomeHeaderSliderMainHeaderSlider />
         <PagesHomeChartMainChartSlider />
         <PagesHomeServicesMainServices />
+        <PagesHomeNewsMainNewsSlider />
       </div>
     </div>
   </div>
