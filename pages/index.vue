@@ -5,6 +5,7 @@
       <div class="w-[80%] mx-auto">
         <PagesHomeHeaderSliderMainHeaderSlider />
         <PagesHomeChartMainChartSlider />
+        <PagesHomeServicesMainServices />
       </div>
     </div>
   </div>
