@@ -4,7 +4,7 @@
     <div class="bg-[#e9e9e9]">
       <div class="w-[80%] mx-auto">
         <PagesHomeHeaderSliderMainHeaderSlider />
-        <PagesChartMainChartSlider />
+        <PagesHomeChartMainChartSlider />
       </div>
     </div>
   </div>

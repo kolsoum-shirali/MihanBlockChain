@@ -8,7 +8,7 @@
   >
     <Slide v-for="(item, index) in charts" :key="index">
       <div class="carousel__item">
-        <PagesChartSingleChart :singleChart="item" />
+        <PagesHomeChartSingleChart :singleChart="item" />
       </div>
     </Slide>
 
