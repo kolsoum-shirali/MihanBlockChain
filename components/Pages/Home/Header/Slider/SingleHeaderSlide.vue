@@ -2,7 +2,7 @@
   <div class="wrap-img rounded-xl overflow-hidden relative text-white">
     <div class="h-[350px] rounded-xl">
       <img
-        :src="`/_nuxt/assets/images/homeHeader/${item.img}`"
+        :src="`/_nuxt/assets/images/home/header/${item.img}`"
         class="h-full rounded-xl article-img"
       />
     </div>
