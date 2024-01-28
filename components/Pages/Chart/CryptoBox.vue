@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#f4f9ff] border border-[#ebe4e4] rounded-lg p-4">
+  <div class="bg-[#f4f9ff] border border-[#ebe4e4] rounded-lg p-4 h-full">
     <div
       v-for="(item, index) in items"
       :key="index"
