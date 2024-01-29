@@ -6,7 +6,9 @@
       >
       <PagesHomeContentMainLastArticles />
     </div>
-    <div class="w-[33%] bg-white rounded p-10"></div>
+    <div class="w-[33%] bg-white rounded p-10">
+      <PagesHomeContentMostViewedArticles />
+    </div>
   </div>
 </template>
 
