@@ -9,6 +9,9 @@
         <PagesHomeNewsMainNewsSlider />
         <PagesHomeContentWrapArticles />
       </div>
+      <div class="bg-[#1f2024] my-10">
+        <PagesHomeAnalyzeWrapAnalyze />
+      </div>
     </div>
   </div>
 </template>
