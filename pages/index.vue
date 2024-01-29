@@ -7,6 +7,7 @@
         <PagesHomeChartMainChartSlider />
         <PagesHomeServicesMainServices />
         <PagesHomeNewsMainNewsSlider />
+        <PagesHomeContentWrapArticles />
       </div>
     </div>
   </div>
