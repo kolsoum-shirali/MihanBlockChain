@@ -1,10 +1,15 @@
 <template>
-  <div class="mt-10">
-    <PagesHomeContentSingleArticle
-      v-for="(singleArticle, index) in articles"
-      :key="index"
-      :singleArticle="singleArticle"
-    />
+  <div>
+    <span class="caption text-xl font-bold pl-10 pr-3 pt-2 pb-3"
+      >آخرین مطالب</span
+    >
+    <div class="mt-10">
+      <PagesHomeContentSingleArticle
+        v-for="(singleArticle, index) in articles"
+        :key="index"
+        :singleArticle="singleArticle"
+      />
+    </div>
   </div>
 </template>
 
@@ -18,7 +23,7 @@ const articles = [
     authore: "علی ابراهیمی",
     img: "1.jpg",
     date: "9 بهمن 1402 - 13:10",
-    type:'تحلیل تکنیکال'
+    type: "تحلیل تکنیکال",
   },
   {
     title:
@@ -28,7 +33,7 @@ const articles = [
     authore: "کوثر ایزک شیریان",
     img: "2.jpg",
     date: "9 بهمن 1402 - 11:07",
-    type:'ایردراپ'
+    type: "ایردراپ",
   },
   {
     title: "فردا سیاست جدید تبلیغات گوگل برای ارزهای دیجیتال اجرا خواهد شد",
@@ -37,7 +42,7 @@ const articles = [
     authore: "علی ابراهیمی",
     img: "3.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'تحلیل تکنیکال'
+    type: "تحلیل تکنیکال",
   },
   {
     title: "پیش‌نیاز ETF اسپات ریپل چیست؟ خبرنگار فاکس بیزنس پاسخ می‌دهد",
@@ -46,7 +51,7 @@ const articles = [
     authore: "علی ابراهیمی",
     img: "4.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'اخبار عمومی'
+    type: "اخبار عمومی",
   },
   {
     title: "برای دریافت ایردراپ WEN فقط ۲ روز مهلت باقی مانده است",
@@ -55,7 +60,7 @@ const articles = [
     authore: "علی ابراهیمی",
     img: "5.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'اخبار بیت کوین'
+    type: "اخبار بیت کوین",
   },
   {
     title:
@@ -65,7 +70,7 @@ const articles = [
     authore: "کوثر ایزک شیریان",
     img: "6.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'اخبار آلتکوین'
+    type: "اخبار آلتکوین",
   },
   {
     title: "نفت به بالاترین قیمت ۲ ماه اخیر رسید",
@@ -74,7 +79,7 @@ const articles = [
     authore: "کوثر ایزک شیریان",
     img: "7.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'ایردراپ'
+    type: "ایردراپ",
   },
   {
     title: "بررسی دلایل افزایش قیمت بیت کوین؛ همچنان احتمال ریزش وجود دارد",
@@ -83,7 +88,7 @@ const articles = [
     authore: "کوثر ایزک شیریان",
     img: "8.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'اخبار بیت کوین'
+    type: "اخبار بیت کوین",
   },
   {
     title: "تحلیل تکنیکال قیمت بیت کوین و ۹ آلت کوین منتخب بازار؛ ۷ بهمن ۱۴۰۲",
@@ -92,7 +97,7 @@ const articles = [
     authore: "کوثر ایزک شیریان",
     img: "9.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'اخبار عمومی'
+    type: "اخبار عمومی",
   },
   {
     title:
@@ -102,10 +107,15 @@ const articles = [
     authore: "کوثر ایزک شیریان",
     img: "10.jpg",
     date: "8 بهمن 1402 - 18:00",
-    type:'اخبار بیت کوین'
+    type: "اخبار بیت کوین",
   },
 ];
 </script>
 
 <style lang="scss" scoped>
+.caption {
+  background-color: #38bdf8;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 29% 100%);
+}
 </style>
