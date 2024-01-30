@@ -13,6 +13,7 @@
         <PagesHomeAnalyzeWrapAnalyze />
       </div>
       <PagesHomeMihanPadcastWrapMainPadcast />
+      <PagesHomeVideoMainVideoSlider />
     </div>
   </div>
 </template>
