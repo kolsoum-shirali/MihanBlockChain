@@ -1,10 +1,12 @@
 @import url(./base.css);
+@import url(../font/css/fontiran.css);
 @import url(../icomoon/style.css);
 body {
   direction: rtl;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: IRANSans !important;
 }
 *,
 *::before,
