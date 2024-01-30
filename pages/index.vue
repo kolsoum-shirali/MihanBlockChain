@@ -12,6 +12,7 @@
       <div class="bg-[#1f2024] my-10">
         <PagesHomeAnalyzeWrapAnalyze />
       </div>
+      <PagesHomeMihanPadcastWrapMainPadcast />
     </div>
   </div>
 </template>
