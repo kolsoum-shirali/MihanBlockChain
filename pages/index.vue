@@ -13,9 +13,9 @@
       <PagesHomeMihanPadcastWrapMainPadcast />
       <PagesHomeVideoMainVideoSlider />
     </div>
+    <LayoutFooterMainFooterApp />
   </div>
 </template>
-
 <script></script>
 
 <style scoped></style>
