@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[80%] mx-auto">
+  <div class="w-[80%] mx-auto rounded border-2 border-[#ebe4e4] bg-white  p-10">
     <div class="flex justify-between">
       <span class="caption text-xl font-bold pl-10 pr-3 pt-2 pb-3"
         >میهن پادکست</span
