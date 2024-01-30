@@ -70,11 +70,6 @@ const mainPadcast = {
 </script>
 
 <style lang="scss" scoped>
-.caption {
-  background-color: #38bdf8;
-  color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
-}
 
 .description {
   text-overflow: ellipsis;
