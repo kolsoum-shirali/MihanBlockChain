@@ -1,6 +1,6 @@
 <template>
     <div>
-      <PagesHomeAdsMainAdsContent />
+      <PagesHomeAdvertisementMainadvertisementContent />
     </div>
   </template>
   <script></script>
