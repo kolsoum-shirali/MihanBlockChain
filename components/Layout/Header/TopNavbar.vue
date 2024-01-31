@@ -7,13 +7,14 @@
       </div>
       <div class="w-[35%]">
         <ul class="flex justify-end">
-          <li
+          <nuxt-link
             v-for="(item, index) in options"
             :key="index"
+            :to="item.path"
             class="single-item hover:bg-[#17181b] hover:cursor-pointer hover:text-[#38bdf8] pt-4 pb-3 px-3 transition-colors"
           >
             {{ item.title }}
-          </li>
+          </nuxt-link>
         </ul>
       </div>
     </div>
@@ -22,15 +23,15 @@
 
 <script setup lang="ts">
 const options = [
-  { title: "درباره ما" },
-  { title: "ارتباط با ما" },
-  { title: "فرصت‌های شغلی" },
-  { title: "تعرفه تبلیغات" },
+  { title: "درباره ما", path: "/about-us" },
+  { title: "ارتباط با ما", path: "/contact-us" },
+  { title: "فرصت‌های شغلی", path: "/jobs-opportunity" },
+  { title: "تعرفه تبلیغات", path: "/advertisement" },
 ];
 </script>
 
 <style lang="scss" scoped>
-.single-item{
+.single-item {
   font-size: 12px;
 }
 </style>
