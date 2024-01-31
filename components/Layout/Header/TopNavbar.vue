@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#2c2e32] text-[#ccc] pt-2">
+  <div class="bg-[#2c2e32] text-[#ccc]">
     <div class="w-[80%] mx-auto flex items-center justify-between">
       <div class="flex items-center w-[20%]">
         <i class="icon-clock text-xs"></i>
@@ -10,7 +10,7 @@
           <li
             v-for="(item, index) in options"
             :key="index"
-            class="single-item hover:bg-[#17181b] hover:cursor-pointer hover:text-[#38bdf8] pt-2 pb-3 px-3 transition-colors"
+            class="single-item hover:bg-[#17181b] hover:cursor-pointer hover:text-[#38bdf8] pt-4 pb-3 px-3 transition-colors"
           >
             {{ item.title }}
           </li>

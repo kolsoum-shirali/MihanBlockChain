@@ -31,6 +31,6 @@
 .caption {
   background-color: #38bdf8;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 22% 100%);
 }
 </style>
