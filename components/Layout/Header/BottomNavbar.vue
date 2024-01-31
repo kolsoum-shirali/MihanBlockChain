@@ -13,11 +13,11 @@
           >
             <div class="flex items-center hover:cursor-pointer">
               <span class="text-sm font-bold">{{ item.title }}</span>
-              <i v-if="item.subMenu" class="icon-caret-down mt-2 mr-1"></i>
+              <i v-if="item.subMenu" class="icon-caret-down mr-1"></i>
             </div>
             <div
               v-if="item.subMenu"
-              class="wrap-sub-menu absolute z-10 right-0 top-[70px] w-[200px] border-t-2 border-[#38bdf8] transition-all bg-[#1f2024] py-5 px-3 rounded-b-md"
+              class="wrap-sub-menu absolute z-10 right-0 top-[68px] w-[200px] border-t-2 border-[#38bdf8] transition-all bg-[#1f2024] py-5 px-3 rounded-b-md"
             >
               <ul>
                 <li
@@ -32,7 +32,7 @@
                     </div>
                     <div
                       v-if="option?.subMenu"
-                      class="secound-sub-menu absolute left-[-130px] top-0 bg-[#1f2024] rounded-l-md"
+                      class="secound-sub-menu absolute left-[-120px] top-0 bg-[#1f2024] rounded-l-md"
                     >
                       <ul class="px-3 py-1">
                         <li
@@ -59,7 +59,7 @@
           <input
             type="text"
             placeholder="جستجو"
-            class="search py-2 px-2 bg-transparent outline-0"
+            class="search py-2 px-2 bg-transparent outline-0 text-sm"
           />
           <i class="icon-search absolute left-2 top-3"></i>
         </div>

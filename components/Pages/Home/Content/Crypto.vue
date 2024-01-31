@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="caption text-xl font-bold pl-10 pr-3 pt-2 pb-3"
+    <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
       >کریپتوکده</span
     >
     <div class="flex flex-wrap mt-10">
@@ -38,6 +38,6 @@ const items = [
 .caption {
   background-color: black;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white rounded py-10 px-5 my-10 border-2 border-[#ebe4e4]">
-    <span class="caption text-xl font-bold pl-10 pr-3 pt-2 pb-3">اخبار کوتاه</span>
+    <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3">اخبار کوتاه</span>
 
     <div class="news-slider mt-8">
       <Carousel

@@ -1,11 +1,11 @@
 <template>
   <div class="w-[80%] mx-auto rounded border-2 border-[#ebe4e4] bg-white  p-10">
     <div class="flex justify-between">
-      <span class="caption text-xl font-bold pl-10 pr-3 pt-2 pb-3"
+      <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
         >میهن پادکست</span
       >
       <button
-        class="bg-[#0071bd] text-white rounded flex items-center px-3 text-sm"
+        class="bg-[#0071bd] text-white rounded flex items-center px-3 custom-font-12"
       >
         مطالب بیشتر <i class="icon-rewind mt-1"></i>
       </button>
@@ -28,11 +28,11 @@
           <div class="flex items-center text-sm">
             <div class="flex items-center">
               <i class="icon-user-circle-o"></i>
-              <span class="mr-1">{{ mainPadcast.authore }}</span>
+              <span class="mr-1 custom-font-10">{{ mainPadcast.authore }}</span>
             </div>
             <div class="flex items-center mr-2">
               <i class="icon-clock"></i>
-              <span class="mr-1">{{ mainPadcast.date }}</span>
+              <span class="mr-1 custom-font-10">{{ mainPadcast.date }}</span>
             </div>
           </div>
           <div class="mt-2">
@@ -45,7 +45,7 @@
               {{ mainPadcast.description }}
             </p>
             <button
-              class="bg-[#38bdf8] text-white rounded flex items-center px-3 py-3 text-sm mt-5"
+              class="bg-[#38bdf8] text-white rounded flex items-center px-3 py-3 custom-font-12 mt-5"
             >
               بیشتر بخوانید <i class="icon-rewind mt-1"></i>
             </button>
@@ -70,6 +70,12 @@ const mainPadcast = {
 </script>
 
 <style lang="scss" scoped>
+.caption {
+  background-color: #38bdf8;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+}
+
 
 .description {
   text-overflow: ellipsis;

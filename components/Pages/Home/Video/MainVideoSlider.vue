@@ -2,11 +2,11 @@
   <div class="wrap-videos mt-10">
     <div class="w-[80%] mx-auto py-10">
       <div class="flex justify-between">
-        <span class="caption text-xl font-bold pl-10 pr-3 pt-2 pb-3"
+        <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
           >ویدیوها</span
         >
         <button
-          class="bg-[#0071bd] text-white rounded flex items-center px-3 text-sm"
+          class="bg-[#0071bd] text-white rounded flex items-center px-3 custom-font-12"
         >
           مطالب بیشتر <i class="icon-rewind mt-1"></i>
         </button>
@@ -101,7 +101,7 @@ const items = [
 .caption {
   background-color: #38bdf8;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 18% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 24% 100%);
 }
 .wrap-videos {
   background-image: url("@/assets/images/home/video/back.jpg");

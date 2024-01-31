@@ -7,7 +7,7 @@
       />
       <nuxt-link
         to="/"
-        class="article-type absolute z-10 bottom-0 left-0 text-white px-5 py-1 rounded-md transition-colors"
+        class="article-type absolute z-10 bottom-0 left-0 text-white px-5 py-1 rounded-md transition-colors custom-font-12"
         >{{ singleArticle.type }}</nuxt-link
       >
       <div class="overlay rounded transition-colors"></div>
@@ -19,18 +19,18 @@
         <div class="flex items-center text-sm">
           <div class="flex items-center">
             <i class="icon-user-circle-o"></i>
-            <span class="mr-1">{{ singleArticle.authore }}</span>
+            <span class="mr-1 custom-font-10">{{ singleArticle.authore }}</span>
           </div>
           <div class="flex items-center mr-2">
             <i class="icon-clock"></i>
-            <span class="mr-1">{{ singleArticle.date }}</span>
+            <span class="mr-1 custom-font-10">{{ singleArticle.date }}</span>
           </div>
         </div>
         <div class="mt-2">
           <h1 class="title text-black text-lg font-bold text-justify">
             {{ singleArticle.title }}
           </h1>
-          <p class="description text-sm mt-2 text-justify">
+          <p class="description custom-font-12 mt-2 text-justify">
             {{ singleArticle.description }}
           </p>
         </div>

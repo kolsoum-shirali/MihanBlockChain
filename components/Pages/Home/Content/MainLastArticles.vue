@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="caption text-xl font-bold pl-10 pr-3 pt-2 pb-3"
+    <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
       >آخرین مطالب</span
     >
     <div class="mt-10">
@@ -116,6 +116,6 @@ const articles = [
 .caption {
   background-color: #38bdf8;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 29% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
 }
 </style>

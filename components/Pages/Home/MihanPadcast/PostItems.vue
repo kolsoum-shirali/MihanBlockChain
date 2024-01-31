@@ -17,7 +17,7 @@
             <div>
               <div class="flex items-center text-xs text-[#666]">
                 <i class="icon-clock"></i>
-                <p class="mr-1">{{ item.date }}</p>
+                <p class="mr-1 custom-font-10">{{ item.date }}</p>
               </div>
               <h1
                 class="description mt-3 text-sm text-justify hover:text-[#38bdf8] transition-colors hover:cursor-pointer"

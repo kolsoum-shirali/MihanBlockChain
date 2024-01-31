@@ -11,7 +11,7 @@
         />
         <nuxt-link
           to="/"
-          class="article-type absolute z-10 bottom-1 left-1 text-white px-5 py-1 rounded-md transition-colors text-sm font-bold"
+          class="article-type absolute z-10 bottom-1 left-1 text-white px-5 py-1 rounded-md transition-colors custom-font-12 font-bold"
           >{{ singleTabContent.caption.type }}</nuxt-link
         >
       </div>
