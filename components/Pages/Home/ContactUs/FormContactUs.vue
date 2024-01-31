@@ -42,7 +42,11 @@
           ></textarea>
         </div>
       </div>
-      <button class="bg-[#38bdf8] text-white px-5 py-2 rounded mt-5">ارسال</button>
+      <button
+        class="bg-[#38bdf8] text-white px-5 py-2 rounded mt-5 hover:bg-[#238cc8] transition-colors"
+      >
+        ارسال
+      </button>
     </div>
   </div>
 </template>
