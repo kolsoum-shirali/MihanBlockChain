@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-[80%] mx-auto">
+    <div class="w-[85%] mx-auto">
       <PagesHomeHeaderSliderMainHeaderSlider />
       <PagesHomeChartMainChartSlider />
       <PagesHomeServicesMainServices />
