@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#2c2e32]">
-    <div class="w-[80%] mx-auto flex flex-wrap justify-between py-14">
+    <div class="w-[85%] mx-auto flex flex-wrap justify-between py-14">
       <div class="w-[70%]">
         <LayoutFooterRightSectionFooter />
       </div>

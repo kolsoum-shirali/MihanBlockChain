@@ -4,11 +4,16 @@
       >آخرین مطالب</span
     >
     <div class="mt-10">
-      <PagesHomeContentSingleArticle
-        v-for="(singleArticle, index) in articles"
+      <CommonSingleArticle  v-for="(singleArticle, index) in articles"
         :key="index"
-        :singleArticle="singleArticle"
-      />
+        :singleArticle="singleArticle">
+        <nuxt-link
+        to="/"
+        class="article-type absolute z-10 bottom-0 left-0 text-white px-5 py-1 rounded-md transition-colors custom-font-12"
+        >{{ singleArticle.type }}</nuxt-link
+      >
+      </CommonSingleArticle>
+     
     </div>
   </div>
 </template>
@@ -118,4 +123,15 @@ const articles = [
   color: white;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
 }
+.article-type {
+  background: linear-gradient(
+    90deg,
+    rgba(22, 31, 43, 1) 70%,
+    rgba(0, 168, 255, 1) 100%
+  );
+  &:hover {
+    background: #38bdf8;
+  }
+}
+
 </style>

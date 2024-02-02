@@ -1,6 +1,6 @@
 <template>
   <div class="wrap-videos mt-10">
-    <div class="w-[80%] mx-auto py-10">
+    <div class="w-[85%] mx-auto py-10">
       <div class="flex justify-between">
         <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
           >ویدیوها</span

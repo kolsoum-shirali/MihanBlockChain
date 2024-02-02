@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#2c2e32] text-[#ccc]">
-    <div class="w-[80%] mx-auto flex items-center justify-between">
+    <div class="w-[85%] mx-auto flex items-center justify-between">
       <div class="flex items-center w-[20%]">
         <i class="icon-clock text-xs"></i>
         <span class="text-xs mr-1">جمعه 6 بهمن 1402</span>

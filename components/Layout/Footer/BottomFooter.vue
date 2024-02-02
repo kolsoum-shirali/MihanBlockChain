@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black py-5">
-  <div class="w-[80%] mx-auto text-white text-sm flex justify-between">
+  <div class="w-[85%] mx-auto text-white text-sm flex justify-between">
     <p class="custom-font-12">
       © 2024 - تمامی حقوق مادی و معنوی این وبسایت نزد میهن بلاکچین محفوظ است
     </p>

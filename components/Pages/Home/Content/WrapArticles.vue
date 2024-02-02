@@ -10,7 +10,7 @@
         <PagesHomeContentMostViewedArticles />
       </div>
       <div class="bg-white rounded p-10 mt-10 border-2 border-[#ebe4e4]">
-        <PagesHomeContentCrypto />
+        <CommonCryptoCade />
       </div>
     </div>
   </div>

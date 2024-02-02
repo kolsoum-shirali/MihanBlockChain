@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-[80%] mx-auto bg-white p-10">
+    <div class="w-[85%] mx-auto bg-white p-10">
       <img src="@/assets/images/employment.jpg" alt="employment" />
       <div class="my-10">
         <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"

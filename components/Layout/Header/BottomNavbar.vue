@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#1f2024] text-[#ccc]">
-    <div class="w-[80%] mx-auto flex items-center justify-between">
+    <div class="w-[85%] mx-auto flex items-center justify-between">
       <div class="w-[15%]">
         <img src="@/assets/images/logo.png" alt="logo" class="w-full h-full" />
       </div>
