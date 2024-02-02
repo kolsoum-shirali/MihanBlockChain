@@ -27,16 +27,18 @@
                 >
                   <div class="caption-sub-menu">
                     <div class="title flex items-center justify-between">
-                      <span>{{ option.title }}</span>
-                      <i v-if="option?.subMenu" class="icon-rewind"></i>
+                      <nuxt-link :to="option.path">{{
+                        option.title
+                      }}</nuxt-link>
+                      <i v-if="option?.subItem" class="icon-rewind"></i>
                     </div>
                     <div
-                      v-if="option?.subMenu"
+                      v-if="option?.subItem"
                       class="secound-sub-menu absolute left-[-120px] top-0 bg-[#1f2024] rounded-l-md"
                     >
                       <ul class="px-3 py-1">
                         <li
-                          v-for="(el, index) in option.subMenu"
+                          v-for="(el, index) in option?.subMenu"
                           :key="index"
                           class="hover:text-[#38bdf8] hover:cursor-pointer text-sm my-4"
                         >
@@ -69,81 +71,94 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { useGlobalStore } from '~/store/global'
-import { storeToRefs } from 'pinia'
-const globalStore = useGlobalStore()
-const { showDrawerStatus } = globalStore
-const { showDrawer } = storeToRefs(globalStore)
+<script setup>
+import { useGlobalStore } from "~/store/global";
+import { storeToRefs } from "pinia";
+const globalStore = useGlobalStore();
+const { showDrawerStatus } = globalStore;
+const { showDrawer } = storeToRefs(globalStore);
 const menuOptions = [
   {
     title: "اخبار",
     subMenu: true,
     subMenuItems: [
-      { title: "بیت کوین" },
-      { title: "اتریوم" },
-      { title: "آلتکوین" },
-      { title: "بلاکچین" },
-      { title: "اطلاعیه صرافی" },
-      { title: "رمز ارز در ایران" },
-      { title: "عمومی" },
+      { title: "بیت کوین", path: "/category/news/bitcoin", subItem: false },
+      { title: "اتریوم", path: "/category/news/ethereum", subItem: false },
+      { title: "آلتکوین", path: "/category/news/altcoin", subItem: false },
+      { title: "بلاکچین", path: "/category/news/blockchain", subItem: false },
+      {
+        title: "اطلاعیه صرافی",
+        path: "/category/news/exchange-announcement",
+        subItem: false,
+      },
+      {
+        title: "رمز ارز در ایران",
+        path: "/category/news/cryptocurrency-in-iran",
+        subItem: false,
+      },
+      { title: "عمومی", path: "/category/news/public", subItem: false },
     ],
   },
   {
     title: "آموزش",
     subMenu: true,
     subMenuItems: [
-      { title: "کریپتو پدیا" },
-      { title: "کریپتو کده" },
-      { title: "کیف پول" },
+      { title: "کریپتو پدیا", path: "", subItem: false },
+      { title: "کریپتو کده", path: "", subItem: false },
+      { title: "کیف پول", path: "", subItem: false },
       {
         title: "صرافی",
-        subMenu: [{ title: "صرافی متمرکز" }, { title: "صرافی غیر متمرکز" }],
+        subItem: true,
+        subMenu: [
+          { title: "صرافی متمرکز", path: "" },
+          { title: "صرافی غیر متمرکز", path: "" },
+        ],
       },
-      { title: "سرمایه گذاری" },
-      { title: "ترید" },
-      { title: "دیفای" },
-      { title: "NFT" },
-      { title: "بازی" },
-      { title: "استخراج" },
-      { title: "مقالات عمومی" },
+      { title: "سرمایه گذاری", path: "", subItem: false },
+      { title: "ترید", path: "", subItem: false },
+      { title: "دیفای", path: "", subItem: false },
+      { title: "NFT", path: "", subItem: false },
+      { title: "بازی", path: "", subItem: false },
+      { title: "استخراج", path: "", subItem: false },
+      { title: "مقالات عمومی", path: "", subItem: false },
     ],
   },
   {
     title: "تحلیل",
     subMenu: true,
     subMenuItems: [
-      { title: "تحلیل تکنیکال" },
-      { title: "تحلیل فاندامنتال" },
-      { title: "تحلیل اقتصادی" },
-      { title: "تحلیل آنچین" },
+      { title: "تحلیل تکنیکال", subItem: false },
+      { title: "تحلیل فاندامنتال", subItem: false },
+      { title: "تحلیل اقتصادی", subItem: false },
+      { title: "تحلیل آنچین", subItem: false },
     ],
   },
   {
     title: "قیمت ارز دیجیتال",
     subMenu: true,
     subMenuItems: [
-      { title: "قیمت لحظه ای ارز های دیجیتال" },
-      { title: "قیمت بیت کوین" },
-      { title: "قیمت اتریوم" },
-      { title: "قیمت تتر" },
-      { title: "ماشین حساب ارز دیجیتال" },
-      { title: "مقایسه قیمت در صرافی های ایرانی" },
+      { title: "قیمت لحظه ای ارز های دیجیتال", subItem: false },
+      { title: "قیمت بیت کوین", subItem: false },
+      { title: "قیمت اتریوم", subItem: false },
+      { title: "قیمت تتر", subItem: false },
+      { title: "ماشین حساب ارز دیجیتال", subItem: false },
+      { title: "مقایسه قیمت در صرافی های ایرانی", subItem: false },
     ],
   },
   {
     title: "ویدیو",
     subMenu: true,
     subMenuItems: [
-      { title: "آموزش مفاهیم" },
-      { title: "تحلیل تکنیکال" },
-      { title: "تحلیل آنچین" },
-      { title: "لایو اینستاگرام" },
+      { title: "آموزش مفاهیم", subItem: false },
+      { title: "تحلیل تکنیکال", subItem: false },
+      { title: "تحلیل آنچین", subItem: false },
+      { title: "لایو اینستاگرام", subItem: false },
       {
         title: "صرافی",
+        subItem: false,
       },
-      { title: "بازی" },
-      { title: "عمومی" },
+      { title: "بازی", subItem: false },
+      { title: "عمومی", subItem: false },
     ],
   },
   { title: "ایردراپ", subMenu: false },
