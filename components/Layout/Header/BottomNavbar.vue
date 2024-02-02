@@ -54,6 +54,7 @@
       <div class="w-[20%] flex justify-between items-center">
         <i
           class="icon-menu text-xl hover:text-[#38bdf8] hover:cursor-pointer"
+          @click="showDrawerStatus(!showDrawer)"
         ></i>
         <div class="relative">
           <input
@@ -69,6 +70,11 @@
 </template>
 
 <script setup lang="ts">
+import { useGlobalStore } from '~/store/global'
+import { storeToRefs } from 'pinia'
+const globalStore = useGlobalStore()
+const { showDrawerStatus } = globalStore
+const { showDrawer } = storeToRefs(globalStore)
 const menuOptions = [
   {
     title: "اخبار",
