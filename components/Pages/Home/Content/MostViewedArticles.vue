@@ -1,19 +1,26 @@
 <template>
   <div>
-    <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
+    <span class="caption text-lg font-bold pl-20 pr-3 pt-2 pb-3"
       >پربازدیدترین مطالب هفته</span
     >
     <div class="mt-10">
       <div v-for="(item, index) in items" :key="index" class="flex my-3">
-        <div class="w-[30%] rounded">
+        <div class="wrap-img relative w-[30%] rounded">
           <img
             :src="`/_nuxt/assets/images/home/lastArticle/${item.img}`"
             class="rounded w-full h-full"
           />
+          <div
+            class="overlay transition-colors hover:cursor-pointer rounded"
+          ></div>
         </div>
         <div class="w-[70%] font-bold p-3">
           <div class="hover:cursor-pointer">
-            <h1 class="description text-sm text-justify">{{ item.title }}</h1>
+            <h1
+              class="description text-sm text-justify hover:text-[#38bdf8] transition-colors"
+            >
+              {{ item.title }}
+            </h1>
             <div class="flex items-center text-xs text-[#666] mt-3">
               <i class="icon-clock"></i>
               <p class="mr-1 custom-font-10">{{ item.date }}</p>
@@ -50,7 +57,7 @@ const items = [
 .caption {
   background-color: black;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
 }
 .description {
   text-overflow: ellipsis;
@@ -59,4 +66,16 @@ const items = [
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.wrap-img:hover {
+  .overlay {
+    background: #0000007c;
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
 </style>

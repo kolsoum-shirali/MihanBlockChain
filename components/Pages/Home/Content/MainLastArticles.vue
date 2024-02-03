@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
+    <span class="caption text-lg font-bold pl-20 pr-3 pt-2 pb-3"
       >آخرین مطالب</span
     >
     <div class="mt-10">
