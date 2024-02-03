@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[85%] mx-auto rounded border-2 border-[#ebe4e4] bg-white  p-10">
+  <div class="w-[85%] mx-auto rounded border-2 border-[#ebe4e4] bg-white p-10">
     <div class="flex justify-between">
       <span class="caption text-lg font-bold pl-10 pr-3 pt-2 pb-3"
         >میهن پادکست</span
@@ -22,6 +22,11 @@
           >میهن پادکست</nuxt-link
         >
         <div class="overlay z-10 rounded transition-colors"></div>
+        <div
+          class="absolute right-0 bottom-0 z-20 flex items-center justify-center bg-[#38bdf8] hover:cursor-pointer hover:bg-[#00000092] transition-colors"
+        >
+          <i class="icon-triangle-right text-white text-5xl"></i>
+        </div>
       </div>
       <div class="rounded w-[70%] text-[#666] p-5 transition-colors">
         <div>
@@ -75,7 +80,6 @@ const mainPadcast = {
   color: white;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
 }
-
 
 .description {
   text-overflow: ellipsis;

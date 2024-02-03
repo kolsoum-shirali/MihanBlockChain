@@ -7,11 +7,16 @@
         class="my-3 w-[32%] rounded border border-[#ebe4e4]"
       >
         <div class="flex">
-          <div class="w-[33%] h-ful rounded">
+          <div class="relative w-[33%] h-ful rounded">
             <img
               :src="`/_nuxt/assets/images/home/padcast/${item.img}`"
               class="rounded w-full h-full"
             />
+            <div
+              class="absolute right-0 bottom-0 z-20 flex items-center justify-center bg-[#38bdf8] hover:cursor-pointer hover:bg-[#00000092] transition-colors"
+            >
+              <i class="icon-triangle-right text-white text-3xl"></i>
+            </div>
           </div>
           <div class="w-[70%] font-bold p-3">
             <div>
