@@ -11,8 +11,10 @@
         <CommonSelectedByEditor
           :selectedByEditorItems="selectedByEditorItems"
         />
+       <div  class="sticky top-0 z-20">
         <CommonNewArticles :newArticles="newArticles" />
-        <CommonCryptoCade />
+        <CommonCryptoCade/>
+       </div>
       </div>
     </div>
   </div>
