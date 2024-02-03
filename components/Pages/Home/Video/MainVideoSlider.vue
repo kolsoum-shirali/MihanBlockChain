@@ -6,9 +6,9 @@
           >ویدیوها</span
         >
         <button
-          class="bg-[#0071bd] text-white rounded flex items-center px-3 custom-font-12"
+          class="bg-[#0071bd] hover:bg-[#38bdf8] transition-colors text-white rounded flex items-center px-3 custom-font-12"
         >
-          مطالب بیشتر <i class="icon-rewind mt-1"></i>
+          مطالب بیشتر <i class="icon-rewind"></i>
         </button>
       </div>
       <div class="news-slider mt-8">
@@ -18,10 +18,9 @@
           dir="rtl"
           :wrapAround="true"
           ref="carousel"
-          :autoplay="3000"
         >
           <Slide v-for="(item, index) in items" :key="index" class="py-5">
-            <div>
+            <div class="carousel__item">
               <div class="w-full h-[200px] rounded mb-3">
                 <img
                   :src="`/_nuxt/assets/images/home/video/${item.img}`"
@@ -110,5 +109,13 @@ const items = [
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
+}
+.carousel {
+  &__slide {
+    .carousel__item {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
 }
 </style>

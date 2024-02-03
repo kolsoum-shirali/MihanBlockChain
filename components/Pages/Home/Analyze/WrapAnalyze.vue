@@ -1,5 +1,6 @@
 <template>
-  <div class="w-[85%] mx-auto py-10 bg-[#1f2024] my-10">
+<div class="bg-[#1f2024] my-10">
+  <div class="w-[85%] mx-auto py-10">
     <div class="bg-black flex">
       <div
         v-for="(item, index) in tabs"
@@ -24,6 +25,7 @@
       <PagesHomeAnalyzeSingleTabContent :singleTabContent="selectedItem" />
     </div>
   </div>
+</div>
 </template>
 
 <script setup>

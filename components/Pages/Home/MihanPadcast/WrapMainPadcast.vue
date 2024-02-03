@@ -5,7 +5,7 @@
         >میهن پادکست</span
       >
       <button
-        class="bg-[#0071bd] text-white rounded flex items-center px-3 custom-font-12"
+        class="bg-[#0071bd] hover:bg-[#38bdf8] transition-colors text-white rounded flex items-center px-3 custom-font-12"
       >
         مطالب بیشتر <i class="icon-rewind mt-1"></i>
       </button>
@@ -36,18 +36,18 @@
             </div>
           </div>
           <div class="mt-2">
-            <h1
-              class="text-black hover:text-[#38bdf8] text-lg font-bold text-justify hover:cursor-pointer"
+            <span
+              class="text-black hover:text-[#38bdf8] transition-colors text-lg font-bold text-justify hover:cursor-pointer"
             >
               {{ mainPadcast.title }}
-            </h1>
+            </span>
             <p class="description text-sm mt-2 text-justify">
               {{ mainPadcast.description }}
             </p>
             <button
-              class="bg-[#38bdf8] text-white rounded flex items-center px-3 py-3 custom-font-12 mt-5"
+              class="bg-[#38bdf8] hover:bg-[#0071bd] transition-colors text-white rounded flex items-center px-3 py-3 custom-font-12 mt-5"
             >
-              بیشتر بخوانید <i class="icon-rewind mt-1"></i>
+              بیشتر بخوانید <i class="icon-rewind"></i>
             </button>
           </div>
         </div>
