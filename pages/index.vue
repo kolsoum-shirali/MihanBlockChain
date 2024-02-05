@@ -13,15 +13,15 @@
   </div>
 </template>
 <script setup>
-import { BASE_URL } from "~~/composables/api/api.config";
-await useFetch(`${BASE_URL}homeArticleSlider`)
-  .then((res) => {
-    console.log(res, "resss");
-    console.log(res.data.value, "resss");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// import { BASE_URL } from "~~/composables/api/api.config";
+// await useFetch(`${BASE_URL}homeArticleSlider`)
+//   .then((res) => {
+//     console.log(res, "resss");
+//     console.log(res.data.value, "resss");
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 </script>
 
 <style scoped></style>
