@@ -39,8 +39,43 @@
 </template>
 
 <script setup>
-const props = defineProps(["prices"]);
-const { prices } = props;
+const prices = [
+  {
+    title: " USDC",
+    img: "solana.png",
+    dollarPrice: "2,273.32",
+    tomanPrice: "127,561,668.50",
+    percentage: "2.45",
+  },
+  {
+    title: " USDC",
+    img: "avalanche-red.png",
+    dollarPrice: "2,273.32",
+    tomanPrice: "127,561,668.50",
+    percentage: "2.13",
+  },
+  {
+    title: " USDC",
+    img: "binancecoin.png",
+    dollarPrice: "2,273.32",
+    tomanPrice: "127,561,668.50",
+    percentage: "2.45",
+  },
+  {
+    title: " USDC",
+    img: "bitcoin-color.png",
+    dollarPrice: "2,273.32",
+    tomanPrice: "127,561,668.50",
+    percentage: "2.45",
+  },
+  {
+    title: " USDC",
+    img: "cardano.png",
+    dollarPrice: "2,273.32",
+    tomanPrice: "127,561,668.50",
+    percentage: "2.45",
+  },
+];
 </script>
 
 <style lang="scss" scoped>

@@ -19,7 +19,9 @@
               >
                 {{ item.title }}
               </p>
-              <div class="absolute z-10 right-0 left-0 bottom-0 top-0 bg-[#0000007c] rounded-xl"></div>
+              <div
+                class="absolute z-10 right-0 left-0 bottom-0 top-0 bg-[#0000007c] rounded-xl"
+              ></div>
             </div>
           </div>
         </Slide>
@@ -34,8 +36,33 @@
 <script setup>
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation } from "vue3-carousel";
-const props = defineProps(["selectedByEditorItems"]);
-const { selectedByEditorItems } = props;
+const selectedByEditorItems = [
+  {
+    title: "نفت به بالاترین قیمت ۲ ماه اخیر رسید",
+    img: "expire.jpg",
+  },
+  {
+    title: "بررسی دلایل افزایش قیمت بیت کوین؛ همچنان احتمال ریزش وجود دارد",
+    img: "fax.jpg",
+  },
+  {
+    title: "تحلیل تکنیکال قیمت بیت کوین و ۹ آلت کوین منتخب بازار؛ ۷ بهمن ۱۴۰۲",
+    img: "notCoin.jpg",
+  },
+  {
+    title:
+      "ایردراپ ۷۰۰ میلیون دلار ارز دیجیتال در روزهای آتی؛ فصل ایردراپ‌ها شروع شده است؟",
+    img: "artor.jpg",
+  },
+  {
+    title: "بلاکچین Xai چیست؟ بررسی شبکه گیمینگ زای و ارز دیجیتال XAI",
+    img: "etf.jpg",
+  },
+  {
+    title: "گپ CME چیست؟ شکاف قیمت بیت کوین در بورس کالای شیکاگو",
+    img: "exchange.jpg",
+  },
+];
 
 const settings = {
   itemsToShow: 1,

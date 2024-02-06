@@ -32,8 +32,24 @@
 </template>
 
 <script setup>
-const props = defineProps(["newArticles"]);
-const { newArticles } = props;
+const newArticles = [
+  {
+    title: "برای دریافت ایردراپ WEN فقط ۲ روز مهلت باقی مانده است",
+    img: "1.jpg",
+    date: "8 بهمن 1402 - 13:17",
+  },
+  {
+    title:
+      "ایردراپ ۷۰۰ میلیون دلار ارز دیجیتال در روزهای آتی؛ فصل ایردراپ‌ها شروع شده است؟",
+    img: "2.jpg",
+    date: "8 بهمن 1402 - 13:17",
+  },
+  {
+    title: "نات کوین چیست؟ همه چیز درباره بازی تلگرامی Notcoin",
+    img: "3.jpg",
+    date: "8 بهمن 1402 - 13:17",
+  },
+];
 </script>
 
 <style lang="scss" scoped>
