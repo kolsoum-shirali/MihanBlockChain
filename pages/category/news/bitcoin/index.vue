@@ -1,8 +1,8 @@
 <template>
   <div class="w-[85%] mx-auto">
     <div class="flex justify-between mt-5">
-      <div class="w-[65%] bg-white border border-[#ebe4e4] rounded p-10">
-        <CommonBreadCrumbs />
+      <div class="w-[65%] bg-white border border-[hsl(0,15%,91%)] rounded p-10">
+        <CommonBreadCrumbs :breadCrumbs="breadCrumbs"/>
         <PagesCategoryArticle
           :questions="questions"
           :articleContent="articleContent"
@@ -22,6 +22,7 @@
 <script setup>
 import { BASE_URL } from "~~/composables/api/api.config";
 const articles = ref([]);
+const breadCrumbs = {category:"اخبار بیت کوین"}
 await useFetch(`${BASE_URL}/Articles`)
   .then((res) => {
     articles.value = res.data.value;

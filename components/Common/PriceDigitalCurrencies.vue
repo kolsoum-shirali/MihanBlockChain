@@ -82,6 +82,6 @@ const prices = [
 .caption {
   background-color: black;
   color: white;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
 }
 </style>
