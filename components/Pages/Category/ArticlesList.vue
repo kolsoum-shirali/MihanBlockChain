@@ -12,4 +12,5 @@
 <script setup>
 const props = defineProps(["articles"]);
 const { articles } = props;
+console.log(articles,"articlesarticlesarticles")
 </script>

@@ -8,7 +8,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: [
-    '@pinia/nuxt',
-  ],
+  modules: ["@pinia/nuxt"],
+  buildModules: ["@nuxtjs/axios"],
+  axios: {
+    baseURL: "/",
+  },
 });

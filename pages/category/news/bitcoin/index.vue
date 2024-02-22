@@ -2,7 +2,7 @@
   <div class="w-[85%] mx-auto">
     <div class="flex justify-between mt-5">
       <div class="w-[65%] bg-white border border-[hsl(0,15%,91%)] rounded p-10">
-        <CommonBreadCrumbs :breadCrumbs="breadCrumbs"/>
+        <CommonBreadCrumbs :breadCrumbs="breadCrumbs" />
         <PagesCategoryArticle
           :questions="questions"
           :articleContent="articleContent"
@@ -22,14 +22,18 @@
 <script setup>
 import { BASE_URL } from "~~/composables/api/api.config";
 const articles = ref([]);
-const breadCrumbs = {category:"اخبار بیت کوین"}
-await useFetch(`${BASE_URL}/Articles`)
-  .then((res) => {
-    articles.value = res.data.value;
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+const breadCrumbs = { category: "اخبار بیت کوین" };
+onBeforeMount(() => {
+  useFetch(`${BASE_URL}/Articles`)
+    .then((res) => {
+      articles.value = res.data.value;
+      console.log(articles.value, "response");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+});
+
 const articleContent = ref({
   title: "اخبار بیت کوین",
   description:

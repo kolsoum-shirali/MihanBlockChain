@@ -38,6 +38,8 @@
 <script setup>
 const props = defineProps(["singleArticle"]);
 const { singleArticle } = props;
+console.log(singleArticle,"singleArticle")
+console.log("singleArticle")
 </script>
 
 <style lang="scss" scoped>
