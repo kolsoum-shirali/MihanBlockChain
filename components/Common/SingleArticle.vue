@@ -8,7 +8,8 @@
       <slot articleType></slot>
       <div class="overlay rounded transition-colors"></div>
     </div>
-    <div
+    <nuxt-link
+      :to="`/category/news/bitcoin/${singleArticle.id}`"
       class="wrap-content rounded w-[70%] text-[#666] p-5 hover:bg-[#38bdf8] hover:text-white transition-colors"
     >
       <div class="hover:cursor-pointer">
@@ -31,19 +32,18 @@
           </p>
         </div>
       </div>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
 <script setup>
 const props = defineProps(["singleArticle"]);
 const { singleArticle } = props;
-console.log(singleArticle, "singleArticle");
-console.log("singleArticle");
 </script>
 
 <style lang="scss" scoped>
-.description,.title {
+.description,
+.title {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
