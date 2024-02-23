@@ -23,17 +23,10 @@
 import { BASE_URL } from "~~/composables/api/api.config";
 const articles = ref([]);
 const breadCrumbs = { category: "اخبار بیت کوین" };
-onBeforeMount(() => {
-  useFetch(`${BASE_URL}/Articles`)
-    .then((res) => {
-      articles.value = res.data.value;
-      console.log(articles.value, "response");
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+const { data } = await useAsyncData("articles-bitcoin", async () => {
+  return await Promise.all([$fetch(`${BASE_URL}/Articles`)]);
 });
-
+articles.value = data.value[0];
 const articleContent = ref({
   title: "اخبار بیت کوین",
   description:
