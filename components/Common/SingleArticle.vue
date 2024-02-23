@@ -38,12 +38,12 @@
 <script setup>
 const props = defineProps(["singleArticle"]);
 const { singleArticle } = props;
-console.log(singleArticle,"singleArticle")
-console.log("singleArticle")
+console.log(singleArticle, "singleArticle");
+console.log("singleArticle");
 </script>
 
 <style lang="scss" scoped>
-.description {
+.description,.title {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
