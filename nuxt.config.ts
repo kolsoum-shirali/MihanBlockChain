@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
   app: {
     baseURL: '/MihanBlockChain/',
-    buildAssetsDir: 'assets'
+    buildAssetsDir: 'public'
   },
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css", "~/assets/scss/main.scss"],
+  css: ["~/public/assets/css/main.css", "~/public/assets/scss/main.scss"],
   postcss: {
     plugins: {
       tailwindcss: {},

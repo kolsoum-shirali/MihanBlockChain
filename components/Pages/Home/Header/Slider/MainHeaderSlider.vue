@@ -23,12 +23,12 @@
 </template>
 
 <script setup>
-import oneImg from "@/assets/images/home/header/expire.jpg";
-import twoImg from "@/assets/images/home/header/fax.jpg";
-import threeImg from "@/assets/images/home/header/notCoin.jpg";
-import fourImg from "@/assets/images/home/header/artor.jpg";
-import fiveImg from "@/assets/images/home/header/etf.jpg";
-import sixImg from "@/assets/images/home/header/exchange.jpg";
+import oneImg from "@/public/assets/images/home/header/expire.jpg";
+import twoImg from "@/public/assets/images/home/header/fax.jpg";
+import threeImg from "@/public/assets/images/home/header/notCoin.jpg";
+import fourImg from "@/public/assets/images/home/header/artor.jpg";
+import fiveImg from "@/public/assets/images/home/header/etf.jpg";
+import sixImg from "@/public/assets/images/home/header/exchange.jpg";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 const items = [
