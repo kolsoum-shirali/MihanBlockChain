@@ -1,11 +1,7 @@
 <template>
   <div class="wrap-img rounded-xl overflow-hidden relative text-white">
-  
     <div class="h-[350px] rounded-xl">
-      <img
-        :src="`/_nuxt/assets/images/home/header/${item.img}`"
-        class="h-full rounded-xl article-img"
-      />
+      <img :src="item.img" class="h-full rounded-xl article-img" />
     </div>
     <div
       class="absolute right-0 left-0 bottom-0 top-0 bg-[#0000007c] p-4 rounded-xl overlay"

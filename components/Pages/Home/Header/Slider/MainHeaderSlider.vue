@@ -23,6 +23,7 @@
 </template>
 
 <script setup>
+import oneImg from "@/assets/images/home/header/expire.jpg";
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 const items = [
@@ -30,38 +31,44 @@ const items = [
     title: "نفت به بالاترین قیمت ۲ ماه اخیر رسید",
     description:
       "به دنبال رشد اقتصادی مثبت آمریکا و اخبار مربوط به بسته‌های محرک اقتصادی چین و همچنین بحران فعلی در منطقه",
-    img: "expire.jpg",
+    img: "oneImg",
+    // img: "expire.jpg",
   },
   {
     title: "بررسی دلایل افزایش قیمت بیت کوین؛ همچنان احتمال ریزش وجود دارد",
     description:
       "بیت کوین بالاخره روز گذشته اندکی از فاز رریزشی خارج شد و پس از انقضای ۴.۵ میلیارد دلار از قراردادهای آپشن به بالای",
-    img: "fax.jpg",
+    // img: "fax.jpg",
+    img: "oneImg",
   },
   {
     title: "تحلیل تکنیکال قیمت بیت کوین و ۹ آلت کوین منتخب بازار؛ ۷ بهمن ۱۴۰۲",
     description:
       "قیمت بیت کوین (BTC) در ساعات گذشته بیش از ۴٪ رشد کرده و برای لحظاتی از ۴۲٬۰۰۰ نیز دلار عبور کرده است. حال سوال",
-    img: "notCoin.jpg",
+    // img: "notCoin.jpg",
+    img: "oneImg",
   },
   {
     title:
       "ایردراپ ۷۰۰ میلیون دلار ارز دیجیتال در روزهای آتی؛ فصل ایردراپ‌ها شروع شده است؟",
     description:
       "همزمان با صعودی شدن بازار ارزهای دیجیتال در ماه‌های گذشته، تعداد زیادی از پروژه‌ها از ایردراپ توکن خود بین کاربران",
-    img: "artor.jpg",
+    // img: "artor.jpg",
+    img: "oneImg",
   },
   {
     title: "بلاکچین Xai چیست؟ بررسی شبکه گیمینگ زای و ارز دیجیتال XAI",
     description:
       "شبکه بازی زای (Xai) در ژوئن ۲۰۲۳ (خرداد) راه‌اندازی شد و در همین مدت کوتاه توانست به‌سرعت رشد کند و به یکی از",
-    img: "etf.jpg",
+    // img: "etf.jpg",
+    img: "oneImg",
   },
   {
     title: "گپ CME چیست؟ شکاف قیمت بیت کوین در بورس کالای شیکاگو",
     description:
       "احتمالا در تحلیل‌های بیت کوین، با مفهومی به نام گپ CME هم برخورد کرده‌اید. این گپ از تفاوت قیمت بسته شدن کندل",
-    img: "exchange.jpg",
+    // img: "exchange.jpg",
+    img: "oneImg",
   },
 ];
 const settings = {
