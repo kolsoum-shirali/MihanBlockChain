@@ -1,7 +1,5 @@
 <template>
   <div class="header-slider text-[#ccc] py-10">
-    <img :src="oneImg" class="h-full rounded-xl article-img" />
-    <h1>hiii2002</h1>
     <Carousel
       v-bind="settings"
       :breakpoints="breakpoints"
