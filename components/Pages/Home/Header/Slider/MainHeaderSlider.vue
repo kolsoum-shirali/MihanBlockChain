@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-import oneImg from "@@/assets/images/home/header/expire.jpg";
+import oneImg from "@/assets/images/home/header/expire.jpg";
 import twoImg from "@/assets/images/home/header/fax.jpg";
 import threeImg from "@/assets/images/home/header/notCoin.jpg";
 import fourImg from "@/assets/images/home/header/artor.jpg";
